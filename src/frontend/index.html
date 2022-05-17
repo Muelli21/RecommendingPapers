@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="engl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="search.css">
+        <link rel="stylesheet" href="details.css">
+        <link rel="stylesheet" href="parsing.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>NLP for Academic Text Analysis</title>
+    </head>
+
+    <body>
+        <div id="background">
+            <div class="home-wrapper">
+                <div class="search-wrapper">
+                    <i class="fa fa-search" id="search-icon"></i>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        name="search-input" 
+                        data-provide="typeahead" 
+                        data-items="4" 
+                        placeholder="Type keywords and hit enter" 
+                        onkeypress="onKeyListener(event)"
+                    >
+                </div>
+                <div class="upload-wrapper">
+                    <label id="upload-btn" for="upload"><div class="upload-inner" onclick="processFileInput()">Upload a paper (.pdf)</div></label>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="index.js" async></script>
+    <script src="plotly.mjs"></script>
+</html>

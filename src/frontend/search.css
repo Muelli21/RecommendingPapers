@@ -1,0 +1,79 @@
+.search-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-bottom: 10%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.search-grid {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.search-grid-cell {
+    position: relative;
+    height: 50vh; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color_input-border); 
+}
+
+.search-grid-abstract {
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 80%;
+}
+
+.search-grid-abstract > h4 {
+    margin-bottom: 20px; 
+}
+
+.search-grid-summary {
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--color_primary);
+    color: var(--color_white);
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-grid-cell:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+}
+
+.search-grid-summary > .grid-authors {
+    font-size: 15px;
+}
+
+.search-grid-summary > .grid-citations {
+    font-size: 10px;
+    border-top: 1px solid var(--color_white);
+    width: 50px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+@media screen and (min-width: 960px) {
+    .search-grid {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 18px;
+    }
+
+    .search-grid-cell {
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,13 @@
+.vscode
+.pyc
+.DS_Store
+.pdf
+.json
+
+__pycache__
+env
+
+data
+catboost_info
+
+src/web/frontend/package-lock.json

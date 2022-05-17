@@ -1,0 +1,21 @@
+:root {
+    /* Global colors */
+    --color_white: #ffffff;
+    --color_primary: #5e1ae5;
+    --color_primary-hover: #320985;
+    --color_input-focus: #2584ff;
+    --color_input-border: #d1d1d1;
+
+    /* Margins and paddings */
+    --padding_large-window: 32px;
+    --padding_standard-window: 16px;
+    --padding_small-window: 8px;
+
+    --padding_large-text-input: 8px;
+    --padding_standard-text-input: 4px;
+    --padding_small-text-input: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

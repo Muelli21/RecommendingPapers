@@ -1,0 +1,32 @@
+.parsing-wrapper {
+    width: 100%;
+    padding-top: 10%;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-bottom: 10%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parsing-wrapper > p {
+    text-align: justify;
+}
+
+.parsing-wrapper > textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--color_input-border);
+    border-radius: 5px;
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#abstract-input {
+    height: 33vh;
+}
+
+.confirm-parsed-information-btn:hover {
+    cursor: pointer;
+}
